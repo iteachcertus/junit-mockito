@@ -15,7 +15,8 @@
 	<name>junit-mockito</name>
 	<description>Pruebas Unitarias con JUnit5 y Mockito</description>
 	<properties>
-		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compilar.target>11</maven.compilar.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -32,11 +33,12 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.30</version>
+		<scope>provided</scope>
+	</dependency>
 
 
 		<dependency>
